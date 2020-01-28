@@ -12,6 +12,7 @@
         <module name="cloud-provider-emp-8003" />
         <module name="cloud-provider-emp-8002" />
         <module name="cloud-provider-emp-8001" />
+        <module name="cloud-consumer-emp-feign-9001" />
         <module name="cloud-consumer-emp-9001" />
         <module name="cloud-eureka-7003" />
       </profile>
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cloud-api" options="-parameters" />
       <module name="cloud-consumer-emp-9001" options="-parameters" />
+      <module name="cloud-consumer-emp-feign-9001" options="-parameters" />
       <module name="cloud-eureka-7001" options="-parameters" />
       <module name="cloud-eureka-7002" options="-parameters" />
       <module name="cloud-eureka-7003" options="-parameters" />

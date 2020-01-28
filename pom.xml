@@ -12,6 +12,7 @@
         <module>cloud-eureka-7003</module>
         <module>cloud-provider-emp-8002</module>
         <module>cloud-provider-emp-8003</module>
+        <module>cloud-consumer-emp-feign-9001</module>
     </modules>
 
     <parent>
