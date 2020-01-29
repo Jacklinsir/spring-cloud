@@ -11,6 +11,12 @@
 
     <artifactId>cloud-provider-emp-8003</artifactId>
     <dependencies>
+        <!--引入Hystrix服务-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
         <!--引入Eureka服务-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

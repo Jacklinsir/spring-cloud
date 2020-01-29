@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/cloud-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-consumer-emp-9001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-consumer-emp-feign-9001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-consumer-emp-hystrix-dashboard-9002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-7001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-7002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-eureka-7003/src/main/java" charset="UTF-8" />
@@ -11,5 +12,7 @@
     <file url="file://$PROJECT_DIR$/cloud-provider-emp-8001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-emp-8002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-provider-emp-8003/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-provider-emp-hystrix-8004/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-turbine-dashboard-1001/src/main/java" charset="UTF-8" />
   </component>
 </project>

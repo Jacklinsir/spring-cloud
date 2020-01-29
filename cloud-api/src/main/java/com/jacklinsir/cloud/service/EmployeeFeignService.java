@@ -16,16 +16,17 @@ import java.util.Map;
  * @Date 2020/1/28 21:11
  */
 @Component
-@FeignClient(value = "CLOUD-PROVIDER-EMP")
+//添加服务降级
+@FeignClient(value = "CLOUD-PROVIDER-EMP", fallbackFactory = EmployeeFeignHystrixService.class)
 public interface EmployeeFeignService {
 
     @PostMapping("/emp/add")
-    Map<String,Object> addEmp(Employee employee);
+    Map<String, Object> addEmp(Employee employee);
 
     @GetMapping("/emp/get/{empNo}")
-    Map<String,Object> getByEmployeeId(@PathVariable("empNo") Long empNo);
+    Map<String, Object> getByEmployeeId(@PathVariable("empNo") Long empNo);
 
     @GetMapping("/emp/queryAll")
-    Map<String,Object> queryEmployeeAll();
+    Map<String, Object> queryEmployeeAll();
 
 }

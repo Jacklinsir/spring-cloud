@@ -13,6 +13,9 @@
         <module>cloud-provider-emp-8002</module>
         <module>cloud-provider-emp-8003</module>
         <module>cloud-consumer-emp-feign-9001</module>
+        <module>cloud-provider-emp-hystrix-8004</module>
+        <module>cloud-consumer-emp-hystrix-dashboard-9002</module>
+        <module>cloud-turbine-dashboard-1001</module>
     </modules>
 
     <parent>

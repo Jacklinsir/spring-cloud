@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: cloud-provider-emp
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+  datasource:        #配置数据源
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud_db2?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: laiqilin
+    type: com.alibaba.druid.pool.DruidDataSource
+#mybatis配置
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: com.jacklinsir.cloud.model
+  #mapper-locations:
+
+#配置项目端口
+server:
+  port: 8004
+
+#Eureka的配置，服务注册到那里
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: cloud-provider-hystrix-emp04
+    prefer-ip-address: true #改为true表示显示IP
+#配置info信息
+info:
+  app.name: cloud-provider-emp04
+  company.name: jacklinsir.com

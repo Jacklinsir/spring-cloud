@@ -1,6 +1,10 @@
 server:
   port: 9001
 
+#开启服务降级
+feign:
+  hystrix:
+    enabled: true
 #编写Eureka配置
 #Eureka的配置，服务注册到那里
 eureka:

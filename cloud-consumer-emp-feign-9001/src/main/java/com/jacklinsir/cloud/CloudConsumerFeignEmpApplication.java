@@ -16,7 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients(basePackages = "com.jacklinsir.cloud.service") //扫描feign接口
-@RibbonClient(name = "CLOUD-PROVIDER-EMP", configuration = RuleConfig.class) //在启动该微服务的时候就能去加载我们的自定义Ribbon配置类.
+//@RibbonClient(name = "CLOUD-PROVIDER-EMP", configuration = RuleConfig.class) //在启动该微服务的时候就能去加载我们的自定义Ribbon配置类.
 public class CloudConsumerFeignEmpApplication {
     public static void main(String[] args) {
         SpringApplication.run(CloudConsumerFeignEmpApplication.class, args);

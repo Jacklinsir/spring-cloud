@@ -8,11 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-eureka-7002" />
         <module name="cloud-eureka-7001" />
+        <module name="cloud-consumer-emp-hystrix-dashboard-9002" />
         <module name="cloud-api" />
         <module name="cloud-provider-emp-8003" />
         <module name="cloud-provider-emp-8002" />
         <module name="cloud-provider-emp-8001" />
+        <module name="cloud-turbine-dashboard-1001" />
         <module name="cloud-consumer-emp-feign-9001" />
+        <module name="cloud-provider-emp-hystrix-8004" />
         <module name="cloud-consumer-emp-9001" />
         <module name="cloud-eureka-7003" />
       </profile>
@@ -23,12 +26,15 @@
       <module name="cloud-api" options="-parameters" />
       <module name="cloud-consumer-emp-9001" options="-parameters" />
       <module name="cloud-consumer-emp-feign-9001" options="-parameters" />
+      <module name="cloud-consumer-emp-hystrix-dashboard-9002" options="-parameters" />
       <module name="cloud-eureka-7001" options="-parameters" />
       <module name="cloud-eureka-7002" options="-parameters" />
       <module name="cloud-eureka-7003" options="-parameters" />
       <module name="cloud-provider-emp-8001" options="-parameters" />
       <module name="cloud-provider-emp-8002" options="-parameters" />
       <module name="cloud-provider-emp-8003" options="-parameters" />
+      <module name="cloud-provider-emp-hystrix-8004" options="-parameters" />
+      <module name="cloud-turbine-dashboard-1001" options="-parameters" />
     </option>
   </component>
 </project>

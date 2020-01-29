@@ -6,7 +6,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
@@ -18,17 +17,17 @@ import org.springframework.context.annotation.Bean;
 @EnableEurekaClient //注册到Eureka服务中
 @SpringBootApplication
 @MapperScan("com.jacklinsir.cloud.dao")
-@EnableDiscoveryClient //服务发现
-public class CloudProviderEmp8001Application {
+@EnableCircuitBreaker //启动熔断注解
+public class CloudProviderEmpHystrix8004Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(CloudProviderEmp8001Application.class, args);
+        SpringApplication.run(CloudProviderEmpHystrix8004Application.class, args);
     }
 
     @Bean
-    public ServletRegistrationBean hystrixMetricsStreamServlet(){
+    public ServletRegistrationBean hystrixMetricsStreamServlet() {
         ServletRegistrationBean registrationBean = new ServletRegistrationBean(new HystrixMetricsStreamServlet());
-            registrationBean.addUrlMappings("/actuator/hystrix.stream");
+        registrationBean.addUrlMappings("/actuator/hystrix.stream");
         return registrationBean;
     }
 

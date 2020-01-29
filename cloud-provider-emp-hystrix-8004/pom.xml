@@ -9,9 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-provider-emp-8002</artifactId>
+    <artifactId>cloud-provider-emp-hystrix-8004</artifactId>
     <dependencies>
-        <!--引入Hystrix服务-->
+
+        <!--引入熔断依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
