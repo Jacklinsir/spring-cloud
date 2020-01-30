@@ -16,6 +16,7 @@
         <module>cloud-provider-emp-hystrix-8004</module>
         <module>cloud-consumer-emp-hystrix-dashboard-9002</module>
         <module>cloud-turbine-dashboard-1001</module>
+        <module>cloud-zuul-gateway-9527</module>
     </modules>
 
     <parent>
